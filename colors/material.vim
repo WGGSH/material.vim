@@ -126,6 +126,21 @@ elseif g:material_theme_style == 'lighter' || g:material_theme_style == 'lighter
   let s:brown = { 'gui': '#c17e70', 'cterm': 137 }
   let s:pink = { 'gui': '#ff5370', 'cterm': 203 }
   let s:violet = { 'gui': '#945eb8', 'cterm': 97 }
+elseif g:material_theme_style == 'custom' || g:material_theme_style == 'custom-community'
+  let s:bg = { 'gui': '#212121', 'cterm': 'none' }
+  let s:fg = { 'gui': '#eeffff', 'cterm': 231 }
+  let s:invisibles = { 'gui': '#65737e', 'cterm': 66 }
+  let s:comments = { 'gui': '#545454', 'cterm': 59 }
+  let s:selection = { 'gui': '#2c2c2c', 'cterm': 237 }
+  let s:guides = { 'gui': '#424242', 'cterm': 0 }
+  let s:line_numbers = { 'gui': '#424242', 'cterm': 0 }
+  let s:line_highlight = { 'gui': '#171717', 'cterm': 0 }
+  let s:red = { 'gui': '#ff6753', 'cterm': 203 }
+  let s:green = { 'gui': '#6bc276', 'cterm': 2 } " 186 –– almost perfect match
+  let s:cyan = { 'gui': '#33c5ff', 'cterm': 117 }
+  let s:purple = { 'gui': '#ae81ff', 'cterm': 141 }
+  let s:pink = { 'gui': '#f92672', 'cterm': 197 }
+  let s:orange = { 'gui': '#f76031', 'cterm': 209 }
 endif
 
 " Defined globally so that the Airline theme has access
@@ -219,6 +234,12 @@ call s:SetHighlight('Special', s:violet, '', '')
 call s:SetHighlight('Underlined', s:blue, '', '')
 call s:SetHighlight('Error', s:bg, s:red, '')
 call s:SetHighlight('Todo', s:orange, s:bg, 'italic')
+
+if g:material_theme_style == 'custom' || g:material_theme_style == 'custom-community'
+  call s:SetHighlight('Type', s:pink, '', '')
+  call s:SetHighlight('Statement', s:cyan, '', '')
+  call s:SetHighlight('Operator', s:purple, '', '')
+endif
 
 " Legacy groups for official git.vim and diff.vim syntax
 hi! link diffFile DiffAdd

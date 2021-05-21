@@ -36,24 +36,45 @@ function! airline#themes#material#refresh()
     \ 'airline_c': [ group[0], '', group[2], '', '' ]
     \ }
 
+  " let s:I1 = [g:material_colorscheme_map.line_highlight.gui,
+  "   \ g:material_colorscheme_map.violet.gui,
+  "   \ g:material_colorscheme_map.line_highlight.cterm,
+  "   \ g:material_colorscheme_map.violet.cterm, '']
+  " let g:airline#themes#material#palette.insert = airline#themes#generate_color_map(s:I1, s:N2, s:N3)
+  " let g:airline#themes#material#palette.insert_modified = g:airline#themes#material#palette.normal_modified
+
   let s:I1 = [g:material_colorscheme_map.line_highlight.gui,
-    \ g:material_colorscheme_map.violet.gui,
+    \ g:material_colorscheme_map.green.gui,
     \ g:material_colorscheme_map.line_highlight.cterm,
-    \ g:material_colorscheme_map.violet.cterm, '']
+    \ g:material_colorscheme_map.green.cterm, '']
   let g:airline#themes#material#palette.insert = airline#themes#generate_color_map(s:I1, s:N2, s:N3)
   let g:airline#themes#material#palette.insert_modified = g:airline#themes#material#palette.normal_modified
 
+  " let s:R1 = [g:material_colorscheme_map.line_highlight.gui,
+  "   \ g:material_colorscheme_map.green.gui,
+  "   \ g:material_colorscheme_map.line_highlight.cterm,
+  "   \ g:material_colorscheme_map.green.cterm, 'bold']
+  " let g:airline#themes#material#palette.replace = airline#themes#generate_color_map(s:R1, s:N2, s:N3)
+  " let g:airline#themes#material#palette.replace_modified = g:airline#themes#material#palette.normal_modified
+
   let s:R1 = [g:material_colorscheme_map.line_highlight.gui,
-    \ g:material_colorscheme_map.green.gui,
+    \ g:material_colorscheme_map.purple.gui,
     \ g:material_colorscheme_map.line_highlight.cterm,
-    \ g:material_colorscheme_map.green.cterm, 'bold']
+    \ g:material_colorscheme_map.purple.cterm, 'bold']
   let g:airline#themes#material#palette.replace = airline#themes#generate_color_map(s:R1, s:N2, s:N3)
   let g:airline#themes#material#palette.replace_modified = g:airline#themes#material#palette.normal_modified
 
+  " let s:V1 = [g:material_colorscheme_map.line_highlight.gui,
+  "   \ g:material_colorscheme_map.blue.gui,
+  "   \ g:material_colorscheme_map.line_highlight.cterm,
+  "   \ g:material_colorscheme_map.blue.cterm, 'bold']
+  " let g:airline#themes#material#palette.visual = airline#themes#generate_color_map(s:V1, s:N2, s:N3)
+  " let g:airline#themes#material#palette.visual_modified = g:airline#themes#material#palette.normal_modified
+
   let s:V1 = [g:material_colorscheme_map.line_highlight.gui,
-    \ g:material_colorscheme_map.blue.gui,
+    \ g:material_colorscheme_map.pink.gui,
     \ g:material_colorscheme_map.line_highlight.cterm,
-    \ g:material_colorscheme_map.blue.cterm, 'bold']
+    \ g:material_colorscheme_map.pink.cterm, 'bold']
   let g:airline#themes#material#palette.visual = airline#themes#generate_color_map(s:V1, s:N2, s:N3)
   let g:airline#themes#material#palette.visual_modified = g:airline#themes#material#palette.normal_modified
 
