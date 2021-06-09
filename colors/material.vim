@@ -148,7 +148,7 @@ elseif g:material_theme_style == 'custom' || g:material_theme_style == 'custom-c
   let s:caret = { 'gui': '#ffcc00', 'cterm': 220 }
   let s:selection = { 'gui': '#2c3b41', 'cterm': 239 }
   let s:guides = { 'gui': '#37474f', 'cterm': 17 }
-  let s:line_numbers = { 'gui': '#37474f', 'cterm': 145 }
+  let s:line_numbers = { 'gui': '#597380', 'cterm': 145 }
   let s:line_highlight = { 'gui': '#1a2327', 'cterm': 235 }
 
   let s:white = { 'gui': '#ffffff', 'cterm': 231 }
@@ -283,7 +283,7 @@ if g:material_theme_style == 'custom' || g:material_theme_style == 'custom-commu
   call s:SetHighlight('Statement', s:cyan, '', '')
   call s:SetHighlight('Operator', s:orange, '', '')
   call s:SetHighlight('Number', s:purple, '', '')
-  call s:SetHighlight('CursorLineNr', s:cyan, '', '')
+  call s:SetHighlight('CursorLineNr', s:red, '', '')
   call s:SetHighlight('CursorColumn', '', s:bg, '')
   call s:SetHighlight('IncSearch', s:white, s:invisibles, 'none')
   call s:SetHighlight('Search', s:white, s:invisibles, 'none')
