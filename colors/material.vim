@@ -283,7 +283,7 @@ if g:material_theme_style == 'custom' || g:material_theme_style == 'custom-commu
   call s:SetHighlight('Statement', s:cyan, '', '')
   call s:SetHighlight('Operator', s:orange, '', '')
   call s:SetHighlight('Number', s:purple, '', '')
-  call s:SetHighlight('CursorLineNr', s:red, '', '')
+  call s:SetHighlight('CursorLineNr', s:cyan, '', '')
   call s:SetHighlight('CursorColumn', '', s:bg, '')
   call s:SetHighlight('IncSearch', s:white, s:invisibles, 'none')
   call s:SetHighlight('Search', s:white, s:invisibles, 'none')
