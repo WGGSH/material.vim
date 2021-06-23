@@ -126,6 +126,30 @@ elseif g:material_theme_style == 'lighter' || g:material_theme_style == 'lighter
   let s:brown = { 'gui': '#c17e70', 'cterm': 137 }
   let s:pink = { 'gui': '#ff5370', 'cterm': 203 }
   let s:violet = { 'gui': '#945eb8', 'cterm': 97 }
+elseif g:material_theme_style == 'custom-lighter' || g:material_theme_style == 'custom-lighter-community'
+  set background=light
+  let s:bg = { 'gui': '#fafafa', 'cterm': 'none' }
+  let s:fg = { 'gui': '#000000', 'cterm': 0 }
+  let s:invisibles = { 'gui': '#e7eaec', 'cterm': 189 }
+  let s:comments = { 'gui': '#90a4ae', 'cterm': 109 }
+  let s:caret = { 'gui': '#272727', 'cterm': 0 }
+  let s:selection = { 'gui': '#ebf4f3', 'cterm': 254 }
+  let s:guides = { 'gui': '#b0bec5', 'cterm': 146 }
+  let s:line_numbers = { 'gui': '#cfd8dc', 'cterm': 188 }
+  let s:line_highlight = { 'gui': '#ecf0f1', 'cterm': 253 }
+  let s:white = { 'gui': '#ffffff', 'cterm': 231 }
+  let s:black = { 'gui': '#000000', 'cterm': 0 }
+  let s:red = { 'gui': '#e53935', 'cterm': 160 }
+  let s:orange = { 'gui': '#f76d47', 'cterm': 202 }
+  let s:yellow = { 'gui': '#ffb62c', 'cterm': 214 }
+  let s:green = { 'gui': '#91b859', 'cterm': 107 }
+  let s:cyan = { 'gui': '#39adb5', 'cterm': 37 }
+  let s:blue = { 'gui': '#6182b8', 'cterm': 67 }
+  let s:paleblue = { 'gui': '#8796b0', 'cterm': 103 }
+  let s:purple = { 'gui': '#7c4dff', 'cterm': 99 }
+  let s:brown = { 'gui': '#c17e70', 'cterm': 137 }
+  let s:pink = { 'gui': '#ff5370', 'cterm': 203 }
+  let s:violet = { 'gui': '#945eb8', 'cterm': 97 }
 elseif g:material_theme_style == 'custom' || g:material_theme_style == 'custom-community'
   let s:bg = { 'gui': '#212121', 'cterm': 'none' }
   let s:fg = { 'gui': '#eeffff', 'cterm': 231 }
