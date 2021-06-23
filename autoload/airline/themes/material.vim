@@ -10,12 +10,28 @@ function! airline#themes#material#refresh()
         \ g:material_colorscheme_map.black.cterm],
     \ }
 
+  " let s:N1 = [g:material_colorscheme_map.line_highlight.gui,
+  "   \ g:material_colorscheme_map.cyan.gui,
+  "   \ g:material_theme_style == 'lighter' ?
+  "       \ g:material_colorscheme_map.white.cterm :
+  "       \ g:material_colorscheme_map.black.cterm,
+  "   \ g:material_colorscheme_map.cyan.cterm, 'bold']
+  " let s:N2 = [g:material_colorscheme_map.fg.gui,
+  "   \ g:material_colorscheme_map.selection.gui,
+  "   \ g:material_colorscheme_map.fg.cterm,
+  "   \ g:material_colorscheme_map.selection.cterm, '']
+  " let s:N3 = [g:material_colorscheme_map.fg.gui,
+  "   \ g:material_colorscheme_map.line_numbers.gui,
+  "   \ g:material_colorscheme_map.fg.cterm,
+  "   \ g:material_colorscheme_map.selection.cterm, '']
+  " let g:airline#themes#material#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+
   let s:N1 = [g:material_colorscheme_map.line_highlight.gui,
-    \ g:material_colorscheme_map.cyan.gui,
+    \ g:material_colorscheme_map.green.gui,
     \ g:material_theme_style == 'lighter' ?
         \ g:material_colorscheme_map.white.cterm :
         \ g:material_colorscheme_map.black.cterm,
-    \ g:material_colorscheme_map.cyan.cterm, 'bold']
+    \ g:material_colorscheme_map.green.cterm, 'bold']
   let s:N2 = [g:material_colorscheme_map.fg.gui,
     \ g:material_colorscheme_map.selection.gui,
     \ g:material_colorscheme_map.fg.cterm,
@@ -25,13 +41,13 @@ function! airline#themes#material#refresh()
     \ g:material_colorscheme_map.fg.cterm,
     \ g:material_colorscheme_map.selection.cterm, '']
   let g:airline#themes#material#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
-
-  let group = [g:material_colorscheme_map.yellow.gui,
+  let group = [g:material_colorscheme_map.red.gui,
     \ g:material_colorscheme_map.bg.gui,
     \ g:material_colorscheme_map.yellow.cterm,
     \ g:material_theme_style == 'lighter' ?
         \ g:material_colorscheme_map.white.cterm :
         \ g:material_colorscheme_map.black.cterm, '']
+
   let g:airline#themes#material#palette.normal_modified = {
     \ 'airline_c': [ group[0], '', group[2], '', '' ]
     \ }
@@ -44,9 +60,9 @@ function! airline#themes#material#refresh()
   " let g:airline#themes#material#palette.insert_modified = g:airline#themes#material#palette.normal_modified
 
   let s:I1 = [g:material_colorscheme_map.line_highlight.gui,
-    \ g:material_colorscheme_map.green.gui,
+    \ g:material_colorscheme_map.red.gui,
     \ g:material_colorscheme_map.line_highlight.cterm,
-    \ g:material_colorscheme_map.green.cterm, '']
+    \ g:material_colorscheme_map.red.cterm, '']
   let g:airline#themes#material#palette.insert = airline#themes#generate_color_map(s:I1, s:N2, s:N3)
   let g:airline#themes#material#palette.insert_modified = g:airline#themes#material#palette.normal_modified
 
@@ -72,15 +88,22 @@ function! airline#themes#material#refresh()
   " let g:airline#themes#material#palette.visual_modified = g:airline#themes#material#palette.normal_modified
 
   let s:V1 = [g:material_colorscheme_map.line_highlight.gui,
-    \ g:material_colorscheme_map.pink.gui,
+    \ g:material_colorscheme_map.blue.gui,
     \ g:material_colorscheme_map.line_highlight.cterm,
-    \ g:material_colorscheme_map.pink.cterm, 'bold']
+    \ g:material_colorscheme_map.blue.cterm, 'bold']
   let g:airline#themes#material#palette.visual = airline#themes#generate_color_map(s:V1, s:N2, s:N3)
   let g:airline#themes#material#palette.visual_modified = g:airline#themes#material#palette.normal_modified
 
-  let s:IA = [g:material_colorscheme_map.comments.gui,
+  " let s:IA = [g:material_colorscheme_map.comments.gui,
+  "   \ g:material_colorscheme_map.line_highlight.gui,
+  "   \ g:material_colorscheme_map.comments.cterm,
+  "   \ g:material_colorscheme_map.line_highlight.cterm, 'bold']
+  " let g:airline#themes#material#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
+  " let g:airline#themes#material#palette.inactive_modified = g:airline#themes#material#palette.normal_modified
+
+  let s:IA = [g:material_colorscheme_map.invisibles.gui,
     \ g:material_colorscheme_map.line_highlight.gui,
-    \ g:material_colorscheme_map.comments.cterm,
+    \ g:material_colorscheme_map.invisibles.cterm,
     \ g:material_colorscheme_map.line_highlight.cterm, 'bold']
   let g:airline#themes#material#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
   let g:airline#themes#material#palette.inactive_modified = g:airline#themes#material#palette.normal_modified
