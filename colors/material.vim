@@ -128,14 +128,15 @@ elseif g:material_theme_style == 'lighter' || g:material_theme_style == 'lighter
   let s:violet = { 'gui': '#945eb8', 'cterm': 97 }
 elseif g:material_theme_style == 'custom-lighter' || g:material_theme_style == 'custom-lighter-community'
   set background=light
-  let s:bg = { 'gui': '#fafafa', 'cterm': 'none' }
+  let s:bg = { 'gui': '#eaeaea', 'cterm': 'none' }
   let s:fg = { 'gui': '#000000', 'cterm': 0 }
   let s:invisibles = { 'gui': '#e7eaec', 'cterm': 189 }
   let s:comments = { 'gui': '#90a4ae', 'cterm': 109 }
   let s:caret = { 'gui': '#272727', 'cterm': 0 }
   let s:selection = { 'gui': '#ebf4f3', 'cterm': 254 }
   let s:guides = { 'gui': '#b0bec5', 'cterm': 146 }
-  let s:line_numbers = { 'gui': '#cfd8dc', 'cterm': 188 }
+  " let s:line_numbers = { 'gui': '#cfd8dc', 'cterm': 188 }
+  let s:line_numbers = { 'gui': '#212121', 'cterm': 188 }
   let s:line_highlight = { 'gui': '#ecf0f1', 'cterm': 253 }
   let s:white = { 'gui': '#ffffff', 'cterm': 231 }
   let s:black = { 'gui': '#000000', 'cterm': 0 }
@@ -542,19 +543,19 @@ if g:material_theme_style !~ '-community$'
   call s:SetHighlight('markdownCode', s:paleblue, '', '')
   call s:SetHighlight('markdownCodeDelimiter', s:green, '', '')
   call s:SetHighlight('markdownHeadingDelimiter', s:cyan, '', '')
-  call s:SetHighlight('markdownH1', s:yellow, '', '')
-  call s:SetHighlight('markdownH2', s:yellow, '', '')
-  call s:SetHighlight('markdownH3', s:yellow, '', '')
-  call s:SetHighlight('markdownH4', s:yellow, '', '')
-  call s:SetHighlight('markdownH5', s:yellow, '', '')
-  call s:SetHighlight('markdownH6', s:yellow, '', '')
+  call s:SetHighlight('markdownH1', s:red, '', '')
+  call s:SetHighlight('markdownH2', s:red, '', '')
+  call s:SetHighlight('markdownH3', s:red, '', '')
+  call s:SetHighlight('markdownH4', s:red, '', '')
+  call s:SetHighlight('markdownH5', s:red, '', '')
+  call s:SetHighlight('markdownH6', s:red, '', '')
   call s:SetHighlight('markdownItalic', s:pink, '', 'italic')
   call s:SetHighlight('markdownItalicDelimiter', s:cyan, '', '')
   call s:SetHighlight('markdownLinkDelimiter', s:cyan, '', '')
-  call s:SetHighlight('markdownLinkText', s:green, '', '')
+  call s:SetHighlight('markdownLinkText', s:purple, '', '')
   call s:SetHighlight('markdownLinkTextDelimiter', s:cyan, '', '')
   call s:SetHighlight('markdownListMarker', s:cyan, '', '')
-  call s:SetHighlight('markdownUrl', s:pink, '', 'underline')
+  call s:SetHighlight('markdownUrl', s:blue, '', 'underline')
   call s:SetHighlight('markdownUrlTitleDelimiter', s:green, '', '')
 else
   call s:SetHighlight('markdownBold', s:yellow, '', 'bold')
