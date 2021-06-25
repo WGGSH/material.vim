@@ -140,10 +140,12 @@ elseif g:material_theme_style == 'custom-lighter' || g:material_theme_style == '
   let s:line_highlight = { 'gui': '#ecf0f1', 'cterm': 253 }
   let s:white = { 'gui': '#ffffff', 'cterm': 231 }
   let s:black = { 'gui': '#000000', 'cterm': 0 }
-  let s:red = { 'gui': '#e53935', 'cterm': 160 }
+  " let s:red = { 'gui': '#e53935', 'cterm': 160 }
+  let s:red = { 'gui': '#F92672', 'cterm': 203 }
   let s:orange = { 'gui': '#f76d47', 'cterm': 202 }
   let s:yellow = { 'gui': '#ffb62c', 'cterm': 214 }
-  let s:green = { 'gui': '#91b859', 'cterm': 107 }
+  " let s:green = { 'gui': '#91b859', 'cterm': 107 }
+  let s:green = { 'gui': '#6bc276', 'cterm': 2 } " 186 –– almost perfect match
   let s:cyan = { 'gui': '#39adb5', 'cterm': 37 }
   let s:blue = { 'gui': '#6182b8', 'cterm': 67 }
   let s:paleblue = { 'gui': '#8796b0', 'cterm': 103 }
