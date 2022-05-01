@@ -269,6 +269,7 @@ elseif g:material_theme_style == 'custom2' || g:material_theme_style == 'custom2
   let g:material_color_brown = s:brown
   let g:material_color_pink = s:pink
   let g:material_color_violet = s:violet
+endif
 
 " Defined globally so that the Airline theme has access
 let g:material_colorscheme_map = {}
