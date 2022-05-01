@@ -211,7 +211,64 @@ elseif g:material_theme_style == 'custom' || g:material_theme_style == 'custom-c
   let g:material_color_brown = s:brown
   let g:material_color_pink = s:pink
   let g:material_color_violet = s:violet
-endif
+elseif g:material_theme_style == 'custom2' || g:material_theme_style == 'custom2-community'
+  " let s:bg = { 'gui': '#212121', 'cterm': 'none' }
+  " let s:fg = { 'gui': '#eeffff', 'cterm': 231 }
+  " let s:invisibles = { 'gui': '#65737e', 'cterm': 66 }
+  " let s:comments = { 'gui': '#545454', 'cterm': 59 }
+  " let s:selection = { 'gui': '#2c2c2c', 'cterm': 237 }
+  " let s:guides = { 'gui': '#424242', 'cterm': 0 }
+  " let s:line_numbers = { 'gui': '#424242', 'cterm': 0 }
+  " let s:line_highlight = { 'gui': '#171717', 'cterm': 0 }
+  " let s:red = { 'gui': '#ff6753', 'cterm': 203 }
+  " let s:green = { 'gui': '#6bc276', 'cterm': 2 } " 186 –– almost perfect match
+  " let s:cyan = { 'gui': '#33c5ff', 'cterm': 117 }
+  " let s:purple = { 'gui': '#ae81ff', 'cterm': 141 }
+  " let s:pink = { 'gui': '#f92672', 'cterm': 197 }
+  " let s:orange = { 'gui': '#f76031', 'cterm': 209 }
+  let s:bg = { 'gui': '#212121', 'cterm': 'none' }
+  let s:fg = { 'gui': '#eeffff', 'cterm': 231 }
+  let s:invisibles = { 'gui': '#65738e', 'cterm': 66 }
+  let s:comments = { 'gui': '#608B4E', 'cterm': 65}
+  let s:caret = { 'gui': '#ffcc00', 'cterm': 220 }
+  let s:selection = { 'gui': '#2c3b41', 'cterm': 239 }
+  let s:guides = { 'gui': '#37474f', 'cterm': 17 }
+  let s:line_numbers = { 'gui': '#597380', 'cterm': 145 }
+  let s:line_highlight = { 'gui': '#1a2327', 'cterm': 235 }
+
+  let s:white = { 'gui': '#ffffff', 'cterm': 231 }
+  let s:black = { 'gui': '#000000', 'cterm': 232 }
+  let s:red = { 'gui': '#F92672', 'cterm': 203 }
+  let s:green = { 'gui': '#6bc276', 'cterm': 2 } " 186 –– almost perfect match
+  let s:cyan = { 'gui': '#32B7FA', 'cterm': 117 }
+  let s:purple = { 'gui': '#ae81ff', 'cterm': 141 }
+  let s:pink = { 'gui': '#8C4F61', 'cterm': 197 }
+  " let s:orange = { 'gui': '#f76031', 'cterm': 209 }
+  let s:orange = { 'gui': '#CCA700', 'cterm': 209 }
+  " let s:red = { 'gui': '#ff5370', 'cterm': 203 }
+  " let s:orange = { 'gui': '#f78c6c', 'cterm': 209 }
+  " let s:yellow = { 'gui': '#ffcb6b', 'cterm': 11 }
+  " let s:green = { 'gui': '#c3e88d', 'cterm': 2 } " 186 –– almost perfect match
+  " let s:cyan = { 'gui': '#89ddff', 'cterm': 117 }
+  " let s:blue = { 'gui': '#82aaff', 'cterm': 111 }
+  " let s:paleblue = { 'gui': '#b2ccd6', 'cterm': 152 }
+  " let s:purple = { 'gui': '#c792ea', 'cterm': 176 }
+  " let s:brown = { 'gui': '#c17e70', 'cterm': 137 }
+  let s:pink = { 'gui': '#f07178', 'cterm': 204 }
+  " let s:violet = { 'gui': '#bb80b3', 'cterm': 139 }
+  let g:material_color_white = s:white
+  let g:material_color_black = s:black
+  let g:material_color_red = s:red
+  let g:material_color_orange = s:orange
+  let g:material_color_yellow = s:yellow
+  let g:material_color_green = s:cyan
+  let g:material_color_cyan = s:green
+  let g:material_color_blue = s:blue
+  let g:material_color_paleblue = s:paleblue
+  let g:material_color_purple = s:purple
+  let g:material_color_brown = s:brown
+  let g:material_color_pink = s:pink
+  let g:material_color_violet = s:violet
 
 " Defined globally so that the Airline theme has access
 let g:material_colorscheme_map = {}
